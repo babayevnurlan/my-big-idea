@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #29153b;
+  opacity: 1;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav .container #logo-box img {
+  width: 200px;
+  margin: 10px 0;
+}
+
+nav .container ul.menu > li {
+  float: left;
+  position: relative;
+}
+
+nav .container ul.menu > li > a {
+  color: yellow;
+  font-size: 16px;
+  padding: 0 15px;
+  line-height: 50px;
+}
+
+nav .container ul.menu ul {
+  background-color: #29153b;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0;
+  transition: 250ms all;
+  -webkit-transition: 250ms all;
+  -moz-transition: 250ms all;
+  -ms-transition: 250ms all;
+  -o-transition: 250ms all;
+  visibility: hidden;
+  z-index: 1;
+}
+
+nav .container ul.menu ul li {
+  padding: 7px 12px;
+}
+
+nav .container ul.menu ul li a {
+  color: yellow;
+  padding: 7px 12px;
+  font-size: 14px;
+}
+
+nav .container ul.menu > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+}
+
+/* Header */
+header .header-page {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .header-page .header-photo img {
+  width: 380px;
+}
+
+header .header-page .header-name {
+  color: #ff0;
+  font-size: 3rem;
+}
+
+@media (max-width: 860px) {
+  nav .container {
+    flex-direction: column;
+  }
+
+  header .header-page {
+    flex-direction: column;
+  }
+
+  header .header-page .header-name {
+    text-align: center;
+    padding: 18rem 0;
+  }
+
+  header .header-page .header-photo img {
+    width: 300px;
+  }
+}
+
+/* Section - İdea haqqında məlumat */
+section .section-name h2 {
+  color: rgb(255, 158, 68);
+  text-align: center;
+}
+
+section .section-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .section-text .left {
+  padding: 0 10rem;
+}
+
+section .section-text .right {
+  padding: 0 10rem;
+}
+
+@media (max-width: 400px) {
+  section .section-text {
+    flex-direction: column;
+  }
+
+  section .section-text .left {
+    padding: 0;
+  }
+
+  section .section-text .right {
+    padding: 0;
+  }
+
+  h4 {
+    display: inline-block;
+  }
+}
+
+/* Section - Komanda üzvləri */
+section#team {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section#team .section-name {
+  font-size: 3rem;
+}
+
+section#team #numbers .number {
+  color: rgb(184, 169, 198);
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  section#team {
+    flex-direction: column;
+  }
+}
